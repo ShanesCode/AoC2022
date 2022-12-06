@@ -10,7 +10,7 @@ then
     mkdir AoC2022/input
 fi
 
-for((i=0;i<=25;++i))
+for((i=1;i<=25;++i))
     do
         if [ ! -f AoC2022/code/day${i}.cpp ]
         then
