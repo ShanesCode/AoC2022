@@ -12,7 +12,7 @@ int main(){
 
     if (inputFile.is_open())
     {
-        std::string input;
+        std::string input = "";
         std::getline(inputFile, input);
 
         int i = 13;
