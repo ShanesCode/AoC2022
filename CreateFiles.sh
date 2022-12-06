@@ -1,8 +1,8 @@
 #!/bin/bash
 
-if [ ! -d "AoC2022/code" ] 
+if [ ! -d "AoC2022/answers" ] 
 then
-    mkdir AoC2022/code
+    mkdir AoC2022/answers
 fi
 
 if [ ! -d "AoC2022/input" ] 
@@ -12,7 +12,7 @@ fi
 
 for((i=1;i<=25;++i))
     do
-        if [ ! -f AoC2022/code/day${i}.cpp ]
+        if [ ! -f AoC2022/answers/day${i}.cpp ]
         then
             # create template c++ file
             echo "#include <iostream>
@@ -40,7 +40,7 @@ int main(){
     }
 
     return 0;
-}" > AoC2022/code/day${i}.cpp;
+}" > AoC2022/answers/day${i}.cpp;
         fi
         if [ ! -f AoC2022/input/day${i}.cpp ]
         then
